@@ -600,5 +600,5 @@ if(mage<18)
 {
     badge+=" and youth"
 }
-console.log(`You got ${badge} medal as you completed maarathon in ${hours} hours`)
+console.log(`You got ${badge} medal as you have completed maarathon in ${hours} hours`)
 
