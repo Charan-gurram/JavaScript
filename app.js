@@ -267,3 +267,30 @@ console.log(`Totalbill of ${coffedetails.size} cup with add on ${coffedetails.ad
 coffebill(cup1);
 coffebill(cup2);
 coffebill(cup3);
+
+// 6 . Mobile recharge plan
+
+let plantype="Datapack";
+let validity=0,specweek=true;
+switch(plantype)
+{
+    case "Talktime":
+        validity+=10;
+        break;
+    case "Datapack":
+        validity+=1;
+        break;
+    case "combopack":
+        validity+=20;
+        break;
+    case "Unlimited":
+        validity+=30;
+        break;
+    default:
+        console.log("select a valid plan");
+}
+if(specweek)
+{
+    validity+=2;
+    console.log("your plan has validity : "+validity+ " days");
+}
