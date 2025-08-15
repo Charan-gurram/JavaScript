@@ -574,4 +574,31 @@ else
 console.log(`You got a discount of ${discount}`)
 }
 
+// 15 . Marathon running 
+let hours=4.9,mage=19,badge;
+if(hours<2)
+{
+    badge="elite"
+}
+else if(hours<3)
+{
+    badge="advanced"
+}
+else if(hours<4)
+{
+    badge="Intermediate"
+}
+else if(hours<5)
+{
+    badge="Beginner"
+}
+else if(hours>5)
+{
+    badge="novice"
+}
+if(mage<18)
+{
+    badge+=" and youth"
+}
+console.log(`You got ${badge} medal as you completed maarathon in ${hours} hours`)
 
