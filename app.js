@@ -353,3 +353,28 @@ switch(time)
 }
 console.log(`You have selected ${type} for ${time} `)
 console.log(`Total bill is : ${bill}`)
+
+// 9.University Library fines
+
+let genre="fiction";
+let fine=0,student=false;
+let overduedays=2;
+switch(genre)
+{
+    case "fiction":
+        fine+=10;
+        if(student)
+           fine = fine - (fine * 50 / 100);
+        break;
+    case "reference":
+        fine+=20;
+        if(student)
+            fine = fine - (fine * 50 / 100);
+        break;
+    case "comic":
+        fine+=25;
+        if(student)
+             fine = fine - (fine * 50 / 100);
+        break;
+}
+console.log(`you have overdue on ${genre} book and total fine is ${fine}`)
