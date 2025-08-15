@@ -199,3 +199,71 @@ else if(persondetails.bronze &&persondetails. attend>10 &&persondetails.debit)
 // gym(person1)
 // gym(person2)
 // gym(person3)
+
+// 6.coffe shop
+let cupprice,addonprice;
+let cup1=
+{
+    size:"small",
+    addon:"flavored syrup"
+}
+let cup2=
+{
+    size:"large",
+    addon:null
+}
+let cup3=
+{
+    size:"medium",
+    addon:"whipped cream"
+}
+function coffebill(coffedetails)
+{
+switch(coffedetails.size)
+{
+    case "small":
+        console.log("small sized cup cofee price is 50");
+        cupprice=50;
+        break;
+    case "medium":
+        console.log("medium sized cup cofee price is 100");
+        cupprice=100;
+        break;
+    case "large":
+        console.log("large sized cup cofee price is 150");
+        cupprice=150;
+        break;
+    case "extra-large":
+        console.log("extra-large sized cup cofee price is 200")
+        cupprice=200;
+        break;
+    default :
+        console.log("select cup size");
+}
+switch(coffedetails.addon) 
+{
+    case "xtra shot":
+        console.log("Extra shot price is ₹30");
+        addonprice = 30;
+        break;
+    case "flavored syrup":
+        console.log("Flavored syrup price is ₹25");
+        addonprice = 25;
+        break;
+    case "whipped cream":
+        console.log("Whipped cream price is ₹20");
+        addonprice = 20;
+        break;
+    case null:
+        console.log("no addon selected")
+        addonprice=0;
+        break;
+    default:
+        console.log("select addon");
+}
+let totalbill=cupprice+addonprice;
+console.log(`Totalbill of ${coffedetails.size} cup with add on ${coffedetails.addon} is : ${totalbill}`);
+}
+coffebill(cup1);
+coffebill(cup2);
+coffebill(cup3);
