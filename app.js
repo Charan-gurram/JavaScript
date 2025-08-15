@@ -294,3 +294,62 @@ if(specweek)
     validity+=2;
     console.log("your plan has validity : "+validity+ " days");
 }
+
+// 8 . Restaurant bill
+
+let time="breakfast"
+let type="dosa"
+let bill=0;
+switch(time)
+{
+    case "breakfast":
+        switch(type)
+        {
+            case "dosa":
+                bill+=80;
+                break;
+            case "idly":
+                bill+=50;
+                break;
+            case "paratha":
+                bill+=60;
+                break;
+            default:
+                console.log("no such item");
+        }
+        break;
+    case "Lunch":
+        switch(type)
+        {
+             case "Veg biryani":
+                bill+=250;
+                break;
+            case "Veg Thaali":
+                bill+=150;
+                break;
+            case "Chicken pulav":
+                bill+=200;
+                break;
+            default:
+                console.log("no such item");
+        }
+        break;
+    case "Dinner":
+        switch(type)
+        {
+             case "Pulka":
+                bill+=100;
+                break;
+            case "Veg Thaali":
+                bill+=150;
+                break;
+            case "Sambar Rice":
+                bill+=150;
+                break;
+            default:
+                console.log("no such item");
+        }
+        break;
+}
+console.log(`You have selected ${type} for ${time} `)
+console.log(`Total bill is : ${bill}`)
