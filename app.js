@@ -470,6 +470,7 @@ else if (perc<=50)
     if(finalyear)
     {
         console.log("you have a chance for revaluation as you are final year student")
+        grade='not declared'
     }
     else
         grade='Fail'
@@ -546,16 +547,16 @@ if(tvalue>=20000)
     discount=25;
    
 }
-else if(tvale>=15000)
+else if(tvalue>=15000)
 {
  discount=20;
 
 }
-else if(tvale>=10000)
+else if(tvalue>=10000)
 {
  discount=15;
 }
-else if(tvale>5000)
+else if(tvalue>5000)
 {
  discount=10;
     
@@ -563,17 +564,24 @@ else if(tvale>5000)
 else
 {
     discount="none"
+
 }
-if(bday)
+if(tvalue>=500)
 {
-        discount+=5
-        console.log(`You got a discount of additional 5% and total discount ${discount}`)
+    if(bday)
+    {
+            discount+=5
+            console.log(`You got a discount of additional 5% and total discount ${discount}`)
+    }
+    else
+    {
+    console.log(`You got a discount of ${discount}`)
+    }
 }
 else
 {
-console.log(`You got a discount of ${discount}`)
+    console.log("no dicount");
 }
-
 // 15 . Marathon running 
 let hours=4.9,mage=19,badge;
 if(hours<2)
