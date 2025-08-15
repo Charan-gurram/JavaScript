@@ -432,3 +432,48 @@ else if (perc<=50)
         grade='Fail'
 }
 console.log(`you got ${perc} percentage and your grade is ${grade}`)
+
+// 12.company bonuses
+
+let Eox=15,bonus=0,December=true;
+if(Eox>=15)
+{
+    bonus+=50000;
+    if(December)
+    {
+        bonus+=2000;
+    }
+}
+else if(Eox>=10)
+{
+    bonus+=30000
+    if(December)
+    {
+        bonus+=2000;
+    }
+}
+else if(Eox>=5)
+{
+    bonus+=20000
+    if(December)
+    {
+        bonus+=2000;
+    }
+}
+else if(Eox>=2)
+{
+    bonus+=10000
+    if(December)
+    {
+        bonus+=2000;
+    }
+}
+else if(Eox>0)
+{
+    bonus+=5000
+    if(December)
+    {
+        bonus+=2000;
+    }
+}
+console.log(`Your bonus is ${bonus} as you have ${Eox} years of experience`)
