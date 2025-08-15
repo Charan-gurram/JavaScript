@@ -92,3 +92,73 @@ function bankloan(customer)
 // bankloan(borrower2);
 // bankloan(borrower3);
 // bankloan(borrower4);
+// 4.e-commerce website
+
+// let ordervalue = 2500,
+//     samecity= true,
+//     ispriority = true,
+//     samestate=true;
+//     isprem=true;
+//     weekendorder=true;
+let order1=
+{
+    ordervalue : 2500,
+    samecity: true,
+    ispriority : true,
+    samestate:true 
+};
+let order2=
+{
+    ordervalue : 5500,
+    samecity: false,
+    samestate:true 
+};
+let order3=
+{
+    isprem:true,
+    weekendorder:true,
+    samecity: false,
+    samestate:false 
+};
+function shippingcharges(orderdetails)
+{
+    if(orderdetails.samestate && orderdetails.samecity && orderdetails.ispriority)
+{
+    if(orderdetails.ordervalue>2000)
+    {
+        console.log("elgible for free delivery");
+    }
+    else
+    {
+        console.log("Shiiping charges : Rs.50")
+    }
+}
+ else if(orderdetails.samestate)
+{
+    if(!orderdetails.samecity)
+    { 
+         if(orderdetails.ordervalue>5000)
+    {
+        console.log("elgible for free delivery");
+    }
+    else
+    {
+        console.log("Shiiping charges : Rs.100")
+    }
+    }
+}
+else
+{
+    if(orderdetails.isprem && orderdetails.weekendorder)
+    {
+        console.log("your shipping fee is reduced to 100rs")
+    }
+    else
+    {
+         console.log("your shipping fee is 200rs")
+    }
+}
+}
+// shippingcharges(order1);
+// shippingcharges(order2);
+// shippingcharges(order3);
