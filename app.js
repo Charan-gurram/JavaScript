@@ -378,3 +378,33 @@ switch(genre)
         break;
 }
 console.log(`you have overdue on ${genre} book and total fine is ${fine}`)
+
+// 10. Movie booking bill
+
+let category="balcony",weekend=true,mbill=0;
+switch(category)
+{
+    case "Standard":
+        bill+=100;
+        if(weekend)
+            mbill=mbill+(mbill*20/100);
+        break;
+    case "premium":
+        mbill+=200;
+        if(weekend)
+            mbill=mbill+(mbill*20/100);
+        break;
+    case "vip":
+        mbill+=300;
+        if(weekend)
+            mbill=mbill+(mbill*20/100);
+        break;
+    case "balcony":
+        mbill+=50;
+        if(weekend)
+            mbill=mbill+(mbill*20/100);
+        break;
+    default:
+        console.log("select any seat");
+}
+console.log(`You selectd ${category} and price is ${mbill}`)
