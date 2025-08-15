@@ -92,6 +92,7 @@ function bankloan(customer)
 // bankloan(borrower2);
 // bankloan(borrower3);
 // bankloan(borrower4);
+
 // 4.e-commerce website
 
 // let ordervalue = 2500,
@@ -162,3 +163,39 @@ else
 // shippingcharges(order1);
 // shippingcharges(order2);
 // shippingcharges(order3);
+
+// 5.Gym monthly fees
+
+let person1 ={
+    gold:true,
+    attend:21,   
+}; 
+let person2 ={
+    silver:true,
+    attend:16,  
+    upi:true, 
+};
+let person3 ={
+    bronze:true,
+    attend:21,   
+    debit:true
+};
+
+function gym(persondetails)
+{
+if(persondetails.gold && persondetails.attend>20)
+{
+    console.log("you got cashback of 500")
+}
+else if(persondetails.silver && persondetails.attend >15 && persondetails.upi)
+{
+    console.log("you got cashback of 300")
+}
+else if(persondetails.bronze &&persondetails. attend>10 &&persondetails.debit)
+{
+    console.log("you got cashback of 100") 
+}
+}
+// gym(person1)
+// gym(person2)
+// gym(person3)
