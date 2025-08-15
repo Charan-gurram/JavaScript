@@ -408,3 +408,27 @@ switch(category)
         console.log("select any seat");
 }
 console.log(`You selectd ${category} and price is ${mbill}`)
+
+// 11.Grading based on percentge
+
+let perc=49,grade,finalyear=true;
+if (perc>=90)
+    grade='A';
+else if (perc>=80)
+    grade='B';
+else if (perc>=70)
+    grade='C';
+else if (perc>=60)
+    grade='D';
+else if (perc>=50)
+   grade='E';
+else if (perc<=50)
+{
+    if(finalyear)
+    {
+        console.log("you have a chance for revaluation as you are final year student")
+    }
+    else
+        grade='Fail'
+}
+console.log(`you got ${perc} percentage and your grade is ${grade}`)
