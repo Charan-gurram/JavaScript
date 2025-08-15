@@ -435,45 +435,98 @@ console.log(`you got ${perc} percentage and your grade is ${grade}`)
 
 // 12.company bonuses
 
-let Eox=15,bonus=0,December=true;
+let Eox=1,bonus=0,December=true;
 if(Eox>=15)
 {
     bonus+=50000;
-    if(December)
-    {
-        bonus+=2000;
-    }
+    
 }
 else if(Eox>=10)
 {
     bonus+=30000
-    if(December)
-    {
-        bonus+=2000;
-    }
 }
 else if(Eox>=5)
 {
     bonus+=20000
-    if(December)
-    {
-        bonus+=2000;
-    }
+   
 }
 else if(Eox>=2)
 {
     bonus+=10000
-    if(December)
-    {
-        bonus+=2000;
-    }
+   
 }
 else if(Eox>0)
 {
     bonus+=5000
-    if(December)
-    {
-        bonus+=2000;
-    }
+    
+}
+if(December)
+{
+    bonus+=2000;
 }
 console.log(`Your bonus is ${bonus} as you have ${Eox} years of experience`)
+
+// 13.Temperature predictor
+
+let temp=40,weather,raining=false;
+if(temp>=40)
+{
+     weather="very hot";
+
+}
+else if (temp>=30)
+{
+     weather="hot";
+}
+else if (temp>=20)
+{
+     weather="warm";
+}
+else if (temp>=10)
+{
+     weather="cool";
+}
+    
+else if (temp>=0)
+{
+     weather="cold";
+}
+if(raining)
+        weather+=" and Raining";
+console.log(`Weather  is ${weather} and temperature is ${temp} `)
+    
+// 14.online store discount 
+
+let tvalue=20000,bday=true,discount=0;
+if(tvalue>=20000)
+{
+    discount=25;
+   
+}
+else if(tvale>=15000)
+{
+ discount=20;
+
+}
+else if(tvale>=10000)
+{
+ discount=15;
+}
+else if(tvale>5000)
+{
+ discount=10;
+    
+}
+else
+{
+    discount="none"
+}
+if(bday)
+{
+        discount+=5
+        console.log(`You got a discount of additional 5% and total discount ${discount}`)
+}
+else
+{
+console.log(`You got a discount of ${discount}`)
+}
