@@ -1,4 +1,4 @@
-// Theme-park
+// 1 .Theme-park
 
  let age = 35;
 let price = 1000;
@@ -33,6 +33,49 @@ else     //for age above 60
         console.log(`final price for ${age} aged elder is ${fin_price}`)
     }
 }
+
+// 2.Food delivery app
+
+let orderamount=2000,
+    ispremium=false,
+    couponused=true;
+    issunmng=false;
+if(orderamount>1000)
+{
+    if(ispremium)
+    {
+        console.log("You got free delivery and 15% discount")
+    }
+    else
+    {
+         console.log("You got free delivery and 10% discount")
+    }
+}
+else if(orderamount>500)
+{
+    if(weekday && time>6 && couponused)
+    {
+        console.log("you got discount of 100rs")
+    }
+    else
+        {
+             console.log("No discount")
+        }
+}
+else
+     {
+        if(issunmng)
+        {
+            console.log("YOu got only free delivery")
+        }
+        else
+        {
+            console.log("You are not elgible for free delivery")
+        }
+     }
+
+
+
 
 // 3 . Bank interst rates
 
@@ -88,10 +131,10 @@ function bankloan(customer)
     }
 }
 
-// bankloan(borrower1);
-// bankloan(borrower2);
-// bankloan(borrower3);
-// bankloan(borrower4);
+bankloan(borrower1);
+bankloan(borrower2);
+bankloan(borrower3);
+bankloan(borrower4);
 
 // 4.e-commerce website
 
@@ -160,9 +203,9 @@ else
     }
 }
 }
-// shippingcharges(order1);
-// shippingcharges(order2);
-// shippingcharges(order3);
+shippingcharges(order1);
+shippingcharges(order2);
+shippingcharges(order3);
 
 // 5.Gym monthly fees
 
@@ -530,3 +573,5 @@ else
 {
 console.log(`You got a discount of ${discount}`)
 }
+
+
