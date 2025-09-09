@@ -1,0 +1,31 @@
+ h2
+ {
+    text-align: center;
+ }
+ .formcontainer {
+    width: 20%;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    margin: auto;
+}
+.regform {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#msg
+{
+    text-align: center;
+}
+#sub
+{
+    padding: 6px 12px;
+    width: auto;
+}
