@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <div class="formcontainer">
+        <form class="regform"action="">
+            <label for="name" >First Name</label>
+            <input type="text" id="name"> <br>
+            <p id="namemsg"></p>
+            <label for="phn">Mob.No</label>
+            <input type="tel" name="phn" id="phn"> <br>
+            <p id="phnmsg"></p>
+            <label for="Aadhar">Aadhar</label>
+            <input type="text" name="Aadhar" id="aadhar"> <br>
+              <p id="aadharmsg"></p>
+            <label for="email">Email</label>
+            <input type="email" name="emaal" id="email">  <br>
+              <p id="emailmsg"></p>
+            <label for="password">Password</label>
+            <input type="password" id="pwd"> <br>
+            <p id="pwmsg"></p>
+            <label for="cfpassword">Confirm Password</label>
+            <input type="password" id="cfpwd"> <br>
+              <p id="cfpwdmsg"></p>
+            <button type="submit" id="sub">Submit</button>
+        </form>
+        <p id=fmsg></p>
+     </div>
+        <script src="./app.js"></script>
+</body>
+</html>
