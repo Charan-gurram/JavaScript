@@ -87,6 +87,7 @@ const productsinfo=productInformation.map((p)=>
      <p>${p.name}</p>
      <h2>Price : <strike>${p.actualPrice}</strike></h2>
      <h3>Discounted price : ${p.discountedPrice}</h3>
+      <button>Add to Cart</button>
      </div>
 
     `
@@ -105,9 +106,29 @@ button.addEventListener("click",()=>{
      <p>${p.name}</p>
      <h2>Price : <strike>${p.actualPrice}</strike></h2>
      <h3>Discounted price : ${p.discountedPrice}</h3>
+      <button>Add to Cart</button>
      </div>
 
     `
 ).join("")
 productcontainer.innerHTML=filtereddata;
 })
+const sortbutton=document.getElementById("sort")
+sortbutton.addEventListener("click",()=>{
+    const sorted=productInformation.sort((a,b)=>a.actualPrice-b.actualPrice);
+    // productcontainer.style.backgroundColor="green";
+    const sorteddata=sorted.map((p)=>{
+     return `
+     <div class="productcard">
+     <img src=${p.image}><img>
+     <p>${p.name}</p>
+     <h2>Price : <strike>${p.actualPrice}</strike></h2>
+     <h3>Discounted price : ${p.discountedPrice}</h3>
+     <button>Add to Cart</button>
+     </div>
+        `
+    }).join("")
+    productcontainer.innerHTML=sorteddata;
+})
+
+
